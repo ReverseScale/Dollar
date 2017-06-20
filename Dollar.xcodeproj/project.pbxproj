@@ -26,7 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		925436FD1DBBC97800926BCA /* Try.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Try.playground; sourceTree = "<group>"; };
+		925436FD1DBBC97800926BCA /* Try.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Try.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		__PBXFileRef_Dollar.xcodeproj/Configs/Project.xcconfig /* Dollar.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dollar.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/AutoBind.swift /* AutoBind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoBind.swift; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		__PBXFileRef_Tests/DollarTests/DollarTests.swift /* DollarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarTests.swift; sourceTree = "<group>"; };
 		__PBXFileRef_scripts /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
 		"_____Product_Dollar" /* Dollar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Dollar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_DollarTests" /* DollarTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DollarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_DollarTests" /* DollarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = DollarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +176,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"______Target_Dollar" = {
+						LastSwiftMigration = 0900;
+					};
+					"______Target_DollarTests" = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "Dollar" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -238,7 +246,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Dollar;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -251,7 +260,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -268,7 +278,8 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -282,7 +293,8 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
